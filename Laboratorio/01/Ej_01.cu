@@ -11,8 +11,8 @@ __global__ void helloFromGPU() {
 int main() {
     printf("Hola Mundo desde la CPU!\n");
 
-    helloFromGPU <<< 1, 10 >>> (); // Ejecutar kernel
+    helloFromGPU <<< 1, 10 >>> (); 
 
-    cudaDeviceSynchronize();  // Espera que termine la ejecución del kernel
+    cudaDeviceSynchronize(); 
     return 0;
 }
